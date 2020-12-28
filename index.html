@@ -21,18 +21,22 @@
         <br>
         <br>
     </div><div class="container">   
-
         <div class="main_bar">
-            <a href="index.html"><img src="images/logo.jfif" alt="logo" width="200px" height="50px" ></a>
-            
-            <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search entire store here..." name="search">
-                <button type="submit">Search</button>
-            </form>  
+            <div>
+                <a href="index.html"><img src="images/humlogo.png" alt="logo" width="200px" height="50px" ></a>
             </div>
-
-            <i class="fa fa-shopping-cart" id="cart-icon"></i>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search entire store here..." name="search">
+                    <button type="submit">Search</button>
+                </form>  
+            </div>
+            <div>
+                <img src="images/Toys_Gif.gif" alt="gif">
+            </div>
+            <div>
+                <i class="fa fa-shopping-cart" id="cart-icon"></i>
+            </div>
         </div> <!--end main_bar-->
 
         <div class="menu-bar">
@@ -42,10 +46,48 @@
             <a href="#">BREAKFAST & DAIRY</a>
             <a href="#">BABY KIDS & TOYS</a>
             <a href="#">BEVERAGES</a>
-            <a href="#">MORE</a>
-                
-
+            <a href="#"  
+                    onmouseover='document.getElementsByClassName("sub-menu").style.display = "block";'
+                    onmouseout="document.getElementsByClassName('sub-menu').style.display = 'none';">
+                    MORE
+            </a>
+        <!--
+           
+        -->
         </div>
+        <div class="sub-menu">
+        <div class="menu-row">    
+            <div class="col">
+                <div class="col-item"><a href="#">FRUITS & VEGETABLES</a> </div>
+                <div class="col-item"><a href="#">PERSONAL CARE </a>
+                </div>
+                <div class="col-item"><a href="#"> FURNISHING & HOME NEED </a> </div>
+                <div class="col-item"><a href="#"> ICE CREAMS </a>
+                </div>
+            </div>
+           
+            <div class="col">
+                <div class="col-item"><a href="#"> HOME SERVICES </a></div>
+                <div class="col-item"><a href="#"> PHARMA</a></div>
+                <div class="col-item"><a href="#"> PET CARE </a></div>
+                <div class="col-item"> <a href="#"> OTHER CATEGORIES </a> </div>
+            </div>
+        
+            <div class="col">
+                <div class="col-item"><a href="#">MOBILES TABLETS & LAPTOPS </a>     </div>         
+                <div class="col-item"><a href="#">HOUSEHOLD NEEDS </a></div>
+                <div class="col-item"><a href="#">MEAT & SEAFOOD </a></div>
+                <div class="col-item"><a href="#">CORONA ESSENTIALS </a></div>
+            </div>
+        
+            <div class="col">
+                <div class="col-item"><a href="#">ELECTRONICS </a></div>         
+                <div class="col-item"><a href="#">HOME & KITCHEN </a></div>
+                <div class="col-item"><a href="#">OFFERS </a></div>
+            </div>
+       
+        </div>
+    </div><!--end sub-menu-->
         <br>
         <div class="offers">
             <div class="col-3 side-pics">
@@ -240,6 +282,7 @@
                     </div>
                     <div class="block-content">
                     <div  class="link">
+                        
                         <i class="fa fa-caret-right tick"></i>
                         <a href="">About us</a>
                     </div>
@@ -336,7 +379,18 @@
             </div>
         </div>   <br>   <br>   <br>
         <hr>
-        
+        <div class="last-footer">
+            <div>
+                © Hummart.com 2020. All Rights Reserved<br>
+                Powered By <a href="https://www.matechco.com/">Matech CO</a>
+            </div>
+            <div>
+                <img src="images/easy.png" alt="easypaisa">
+                <img src="images/VISA.png" alt="VISA">
+                <img src="images/mastercard.png" alt="Mastercard">
+            </div>
+        </div>
+
     </div>
     </footer>
 </body>
