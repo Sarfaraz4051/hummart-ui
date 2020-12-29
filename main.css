@@ -77,8 +77,8 @@
     top:0;
     */
 }
-.sub-menu{
-  
+#sub-menu{
+  display: none;
   border-top:5px solid blue;
   background-color: #ececec;
   color:rgb(66, 65, 65);

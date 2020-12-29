@@ -1,13 +1,15 @@
 <!Doctype html>
 <html>
-    <head>
-        <title>HumMart</title>
-        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">  
-        <link rel="stylesheet" href="main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
+
+<head>
+    <title>HumMart</title>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
     <div id="header">
         <div id="upperbar">
             Groceries delivery in Karachi / Mobile phones, Cosmetics, Toys & Electronics nationwide
@@ -20,16 +22,17 @@
         </div>
         <br>
         <br>
-    </div><div class="container">   
+    </div>
+    <div class="container">
         <div class="main_bar">
             <div>
-                <a href="index.html"><img src="images/humlogo.png" alt="logo" width="200px" height="50px" ></a>
+                <a href="index.html"><img src="images/humlogo.png" alt="logo" width="200px" height="50px"></a>
             </div>
             <div class="search-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Search entire store here..." name="search">
                     <button type="submit">Search</button>
-                </form>  
+                </form>
             </div>
             <div>
                 <img src="images/Toys_Gif.gif" alt="gif">
@@ -37,7 +40,8 @@
             <div>
                 <i class="fa fa-shopping-cart" id="cart-icon"></i>
             </div>
-        </div> <!--end main_bar-->
+        </div>
+        <!--end main_bar-->
 
         <div class="menu-bar">
             <a href="#">GROCERY & STAPLES</a>
@@ -46,150 +50,153 @@
             <a href="#">BREAKFAST & DAIRY</a>
             <a href="#">BABY KIDS & TOYS</a>
             <a href="#">BEVERAGES</a>
-            <a href="#"  
-                    onmouseover='document.getElementsByClassName("sub-menu").style.display = "block";'
-                    onmouseout="document.getElementsByClassName('sub-menu').style.display = 'none';">
-                    MORE
+            <a href="#" onmouseover="showInfo(true)" onmouseout="showInfo(false)">
+                MORE
             </a>
-        <!--
+            <!--
            
         -->
         </div>
-        <div class="sub-menu">
-        <div class="menu-row">    
-            <div class="col">
-                <div class="col-item"><a href="#">FRUITS & VEGETABLES</a> </div>
-                <div class="col-item"><a href="#">PERSONAL CARE </a>
+        <div id="sub-menu" >
+            <div class="menu-row">
+                <div class="col">
+                    <div class="col-item"><a href="#">FRUITS & VEGETABLES</a> </div>
+                    <div class="col-item"><a href="#">PERSONAL CARE </a>
+                    </div>
+                    <div class="col-item"><a href="#"> FURNISHING & HOME NEED </a> </div>
+                    <div class="col-item"><a href="#"> ICE CREAMS </a>
+                    </div>
                 </div>
-                <div class="col-item"><a href="#"> FURNISHING & HOME NEED </a> </div>
-                <div class="col-item"><a href="#"> ICE CREAMS </a>
+
+                <div class="col">
+                    <div class="col-item"><a href="#"> HOME SERVICES </a></div>
+                    <div class="col-item"><a href="#"> PHARMA</a></div>
+                    <div class="col-item"><a href="#"> PET CARE </a></div>
+                    <div class="col-item"> <a href="#"> OTHER CATEGORIES </a> </div>
                 </div>
+
+                <div class="col">
+                    <div class="col-item"><a href="#">MOBILES TABLETS & LAPTOPS </a> </div>
+                    <div class="col-item"><a href="#">HOUSEHOLD NEEDS </a></div>
+                    <div class="col-item"><a href="#">MEAT & SEAFOOD </a></div>
+                    <div class="col-item"><a href="#">CORONA ESSENTIALS </a></div>
+                </div>
+
+                <div class="col">
+                    <div class="col-item"><a href="#">ELECTRONICS </a></div>
+                    <div class="col-item"><a href="#">HOME & KITCHEN </a></div>
+                    <div class="col-item"><a href="#">OFFERS </a></div>
+                </div>
+
             </div>
-           
-            <div class="col">
-                <div class="col-item"><a href="#"> HOME SERVICES </a></div>
-                <div class="col-item"><a href="#"> PHARMA</a></div>
-                <div class="col-item"><a href="#"> PET CARE </a></div>
-                <div class="col-item"> <a href="#"> OTHER CATEGORIES </a> </div>
-            </div>
-        
-            <div class="col">
-                <div class="col-item"><a href="#">MOBILES TABLETS & LAPTOPS </a>     </div>         
-                <div class="col-item"><a href="#">HOUSEHOLD NEEDS </a></div>
-                <div class="col-item"><a href="#">MEAT & SEAFOOD </a></div>
-                <div class="col-item"><a href="#">CORONA ESSENTIALS </a></div>
-            </div>
-        
-            <div class="col">
-                <div class="col-item"><a href="#">ELECTRONICS </a></div>         
-                <div class="col-item"><a href="#">HOME & KITCHEN </a></div>
-                <div class="col-item"><a href="#">OFFERS </a></div>
-            </div>
-       
         </div>
-    </div><!--end sub-menu-->
+        <!--end sub-menu-->
         <br>
         <div class="offers">
             <div class="col-3 side-pics">
-                
-                    <img src="images/pic1.jpg" >
-                    <img src="images/pic2.jpg" >
-                
+
+                <img src="images/pic1.jpg">
+                <img src="images/pic2.jpg">
+
             </div>
             <div class="col-9">
-              
-              
-           
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                  <img src="images/pic3.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="images/pic4.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides fade">
-                    <img src="images/pic5.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                    <img src="images/pic6.jpg" style="width:100%">
-                </div>
 
-                <div class="mySlides fade">
-                    <img src="images/pic7.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="images/pic8.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides fade">
-                    <img src="images/pic9.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides fade">
-                      <img src="images/pic10.jpg" style="width:100%">
-                  </div>
-                  
-                  <div class="mySlides fade">
-                      <img src="images/pic11.jpg" style="width:100%">
-                  </div>
-  
+
+
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="images/pic3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic5.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic6.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic7.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/pic8.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic9.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic10.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/pic11.jpg" style="width:100%">
+                    </div>
+
                     <!-- The dots/circles -->
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-                <span class="dot" onclick="currentSlide(8)"></span>
-                <span class="dot" onclick="currentSlide(9)"></span>
-              </div>
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div><!-- end slide show container -->
-              <br>
-              
-            
-             </div>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div><!-- end slide show container -->
+                <br>
+
+
+            </div>
         </div>
     </div><!-- end Container-->
 
-        <div class="info" >
-            
-           <div class="info-item col-2"><span class='fa fa-truck ' style='font-size:48px;color:#7bae23'></span>
-                <div class="info-heading ">
-                    <h3>Same/Next Day Delivery</h3></div>
-                
-                Free delivery on all orders over Rs. 3,000<br>
-                Rs 100 for orders below Rs. 3,000<br>
-                Flat Rs 200 for Same Day orders
-                
+    <div class="info">
+
+        <div class="info-item col-2"><span class='fa fa-truck ' style='font-size:48px;color:#7bae23'></span>
+            <div class="info-heading ">
+                <h3>Same/Next Day Delivery</h3>
             </div>
-            
-            <div class="info-item col-2">
-                <span class='fa fa-rupee ' style='font-size:48px;color:#7bae23'></span>
-                <div class="info-heading "><h3>Cash On Delivery</h3></div>
-                You pay when rider comes at your address.
+
+            Free delivery on all orders over Rs. 3,000<br>
+            Rs 100 for orders below Rs. 3,000<br>
+            Flat Rs 200 for Same Day orders
+
+        </div>
+
+        <div class="info-item col-2">
+            <span class='fa fa-rupee ' style='font-size:48px;color:#7bae23'></span>
+            <div class="info-heading ">
+                <h3>Cash On Delivery</h3>
             </div>
-            
-            <div class="info-item col-2">
-                <span class='fa fa-phone ' style='font-size:48px;color:#7bae23'></span>
-                <div class="info-heading ">
-                    <h3>Online Support</h3>
-                </div>    
-                Customer support from 9AM - Midnight<br>
-                (021)111 116 278
+            You pay when rider comes at your address.
+        </div>
+
+        <div class="info-item col-2">
+            <span class='fa fa-phone ' style='font-size:48px;color:#7bae23'></span>
+            <div class="info-heading ">
+                <h3>Online Support</h3>
+            </div>
+            Customer support from 9AM - Midnight<br>
+            (021)111 116 278
 
 
-            </div>
-        
-        </div><!--end class info-->
+        </div>
+
+    </div>
+    <!--end class info-->
 
 
     <br><br>
@@ -210,31 +217,41 @@
 
         </div>
     </div>
-    
+
     <br><br><br><br><br><br>
 
     <script>
+
+        function showInfo(flag) {
+            if (flag) {
+                document.getElementById('sub-menu').style.display = "block"
+
+            } else {
+
+                document.getElementById('sub-menu').style.display = "none"
+            }
+        }
         let slideIndex = 0;
         showSlides();
-        
+
         function showSlides() {
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000);
-           // Change image every 2 seconds
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+            // Change image every 2 seconds
         };
-        </script>
+    </script>
 
     <div class="third-last-footer">
         <div class="container">
@@ -243,155 +260,158 @@
                 Online Supermarket, Delivery In Karachi, Pakistan
             </h4>
             <p>
-                Ever wondered of entering a grocery store and getting an overview 
-                of products sections and get to grab the required product from there? 
+                Ever wondered of entering a grocery store and getting an overview
+                of products sections and get to grab the required product from there?
                 The alternate is our search bar of HumMart where you can search from a
-                wide range of categories including grocery and staples, home furnishing, 
-                breakfast and dairy, instant foods, biscuits and snacks, beverages, 
+                wide range of categories including grocery and staples, home furnishing,
+                breakfast and dairy, instant foods, biscuits and snacks, beverages,
                 household needs, personal care, home and kitchen, baby products, fruits
-                and vegetables, ice creams and a lot more. Now with online phones and 
-                accessories purchase and with easy and timely home delivery all over 
-                Pakistan. The online shopping of grocery is a blessing to get the 
-                required products over a few clicks. We at HumMart provides our 
-                customers with the best deals to get value addition on the purchase          of products available online as a bundle offer. If you are in a mood to
+                and vegetables, ice creams and a lot more. Now with online phones and
+                accessories purchase and with easy and timely home delivery all over
+                Pakistan. The online shopping of grocery is a blessing to get the
+                required products over a few clicks. We at HumMart provides our
+                customers with the best deals to get value addition on the purchase of products available online as a
+                bundle offer. If you are in a mood to
                 mingle with friends but you got a grocery list in your pocket, just
                 visit HumMart and order the grocery to get it delivered right at your
-                home while you get yourself entertained with friends. Want to cook 
-                your favorite dish, no need to worry for the items to prepare a 
-                mouthwatering dish. HumMart offers you ample products to get the 
+                home while you get yourself entertained with friends. Want to cook
+                your favorite dish, no need to worry for the items to prepare a
+                mouthwatering dish. HumMart offers you ample products to get the
                 ingredients for the dish. We will provide you the products through
                 express delivery within 2 hours. You have the independence to opt
-                out from numerous products as HumMart focuses to bring utmost 
-                facilities through its online grocery store and adding value in 
+                out from numerous products as HumMart focuses to bring utmost
+                facilities through its online grocery store and adding value in
                 life of our valued customers. You need to stay at your home, visit
                 hummart.com through your laptop, smartphone or even from phone
                 application.
             </p>
-    </div><!--end class container-->
-</div><br><br>
+        </div>
+        <!--end class container-->
+    </div><br><br>
     <div class="second-footer"></div>
 
     <footer class="footer">
-    <div class="container">
-        <br>   <br>   <br>
-        <div class="row">
-            <div class="col-3">
-                <div class="block">
-                    <div class="block-title">
-                        <strong>HUMMART</strong>
-                    </div>
-                    <div class="block-content">
-                    <div  class="link">
-                        
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">About us</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Careers</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Sell on HumMart</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Terms & Conditions</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Privacy Policy</a>
-                    </div>
-                </div>
-                </div>
+        <div class="container">
+            <br> <br> <br>
+            <div class="row">
+                <div class="col-3">
+                    <div class="block">
+                        <div class="block-title">
+                            <strong>HUMMART</strong>
+                        </div>
+                        <div class="block-content">
+                            <div class="link">
 
-            </div>            
-            <div class="col-3">
-                <div class="block">
-                    <div class="block-title">
-                        <strong>HELP</strong>
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">About us</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Careers</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Sell on HumMart</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Terms & Conditions</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Privacy Policy</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="block-content">
-                    
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">FAQS</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">How to Order</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">How to Pay</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Return & Refunds</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Contact us</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Delivery</a>
-                    </div>
-                    <div class="link">
-                        <i class="fa fa-caret-right tick"></i>
-                        <a href="">Easy Paisa</a>
+
+                </div>
+                <div class="col-3">
+                    <div class="block">
+                        <div class="block-title">
+                            <strong>HELP</strong>
+                        </div>
+                        <div class="block-content">
+
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">FAQS</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">How to Order</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">How to Pay</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Return & Refunds</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Contact us</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Delivery</a>
+                            </div>
+                            <div class="link">
+                                <i class="fa fa-caret-right tick"></i>
+                                <a href="">Easy Paisa</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>            
-            <div class="col-3">
-                <div class="block">
-                    <div class="block-title">
-                        <strong>CONTACT INFORMATION</strong>
-                    </div>
-                    <div class="block-content">
-                        <div class="sub-title">PHONE</div>
+                <div class="col-3">
+                    <div class="block">
+                        <div class="block-title">
+                            <strong>CONTACT INFORMATION</strong>
+                        </div>
+                        <div class="block-content">
+                            <div class="sub-title">PHONE</div>
                             (021) 111 116 278
-                        <div class="sub-title">EMAIL</div>
-                        <div class="link">
-                        <a href="">customer@hummart.com</a>
-                        </div>
-                        <div class="sub-title">WORKING DAYS/HOURS</div>
-                        Mon - Sun /9:00AM - 9:00PM                        
-                        <br>   <br>
-                        <div>
-                            <a href="#" class="fa fa-facebook fa-footer"></a>
-                            <a href="#" class="fa fa-twitter fa-footer"></a>
-                            <a href="#" class="fa fa-google fa-footer"></a>
-                            <a href="#" class="fa fa-linkedin fa-footer"></a>
-                            <a href="#" class="fa fa-youtube fa-footer"></a>
-                            <a href="#" class="fa fa-instagram fa-footer"></a>
+                            <div class="sub-title">EMAIL</div>
+                            <div class="link">
+                                <a href="">customer@hummart.com</a>
+                            </div>
+                            <div class="sub-title">WORKING DAYS/HOURS</div>
+                            Mon - Sun /9:00AM - 9:00PM
+                            <br> <br>
+                            <div>
+                                <a href="#" class="fa fa-facebook fa-footer"></a>
+                                <a href="#" class="fa fa-twitter fa-footer"></a>
+                                <a href="#" class="fa fa-google fa-footer"></a>
+                                <a href="#" class="fa fa-linkedin fa-footer"></a>
+                                <a href="#" class="fa fa-youtube fa-footer"></a>
+                                <a href="#" class="fa fa-instagram fa-footer"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="block">
-                    <div class="block-title">
-                        <strong>MOBILE APPS</strong>
+                <div class="col-3">
+                    <div class="block">
+                        <div class="block-title">
+                            <strong>MOBILE APPS</strong>
+                        </div>
                     </div>
                 </div>
+            </div> <br> <br> <br>
+            <hr>
+            <div class="last-footer">
+                <div>
+                    © Hummart.com 2020. All Rights Reserved<br>
+                    Powered By <a href="https://www.matechco.com/">Matech CO</a>
+                </div>
+                <div>
+                    <img src="images/easy.png" alt="easypaisa">
+                    <img src="images/VISA.png" alt="VISA">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                </div>
             </div>
-        </div>   <br>   <br>   <br>
-        <hr>
-        <div class="last-footer">
-            <div>
-                © Hummart.com 2020. All Rights Reserved<br>
-                Powered By <a href="https://www.matechco.com/">Matech CO</a>
-            </div>
-            <div>
-                <img src="images/easy.png" alt="easypaisa">
-                <img src="images/VISA.png" alt="VISA">
-                <img src="images/mastercard.png" alt="Mastercard">
-            </div>
-        </div>
 
-    </div>
+        </div>
     </footer>
 </body>
+
 </html>
