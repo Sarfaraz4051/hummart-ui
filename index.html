@@ -57,7 +57,7 @@
            
         -->
         </div>
-        <div id="sub-menu" >
+        <div id="sub-menu">
             <div class="menu-row">
                 <div class="col">
                     <div class="col-item"><a href="#">FRUITS & VEGETABLES</a> </div>
@@ -163,41 +163,60 @@
         </div>
     </div><!-- end Container-->
 
-    <div class="info">
-
-        <div class="info-item col-2"><span class='fa fa-truck ' style='font-size:48px;color:#7bae23'></span>
-            <div class="info-heading ">
-                <h3>Same/Next Day Delivery</h3>
+<div class="info-bar">
+    <div class="container info">
+        
+        <div class="info-block">
+            <div class="icon-style">
+                <span class='fa fa-truck '></span>
             </div>
+            <div class="info-item ">
+                <div class="info-heading ">
+                    <h3>Same/Next Day Delivery</h3>
+                </div>
+                <div class="info-content">
+                    Free delivery on all orders over Rs. 3,000<br>
+                    Rs 100 for orders below Rs. 3,000<br>
+                    Flat Rs 200 for Same Day orders
+                </div>
 
-            Free delivery on all orders over Rs. 3,000<br>
-            Rs 100 for orders below Rs. 3,000<br>
-            Flat Rs 200 for Same Day orders
-
+            </div>
         </div>
 
-        <div class="info-item col-2">
-            <span class='fa fa-rupee ' style='font-size:48px;color:#7bae23'></span>
-            <div class="info-heading ">
-                <h3>Cash On Delivery</h3>
+
+        <div class="info-block">
+            <div  class="icon-style">
+                <span class='fa fa-rupee ' ></span>
             </div>
-            You pay when rider comes at your address.
+            <div class="info-item">
+                <div class="info-heading ">
+                    <h3>Cash On Delivery</h3>
+                </div>
+                <div class="info-content">
+                    You pay when rider comes at your address.
+                </div>
+            </div>
         </div>
 
-        <div class="info-item col-2">
-            <span class='fa fa-phone ' style='font-size:48px;color:#7bae23'></span>
-            <div class="info-heading ">
-                <h3>Online Support</h3>
+
+        <div class="info-block">
+            <div class="icon-style">
+                <span class='fa fa-phone '></span>
             </div>
-            Customer support from 9AM - Midnight<br>
-            (021)111 116 278
-
-
+            <div class="info-item ">
+                <div class="info-heading ">
+                    <h3>Online Support</h3>
+                </div>
+                <div class="info-content">    
+                    Customer support from 9AM - Midnight<br>
+                    (021)111 116 278
+                </div>
+            </div>
         </div>
 
     </div>
     <!--end class info-->
-
+</div>
 
     <br><br>
     <div class="second-footer ">
@@ -220,74 +239,50 @@
 
     <br><br><br><br><br><br>
 
-    <script>
-
-        function showInfo(flag) {
-            if (flag) {
-                document.getElementById('sub-menu').style.display = "block"
-
-            } else {
-
-                document.getElementById('sub-menu').style.display = "none"
-            }
-        }
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000);
-            // Change image every 2 seconds
-        };
-    </script>
+    
 
     <div class="third-last-footer">
-        <div class="container">
-            <br>
-            <h4 style="color:#333">
-                Online Supermarket, Delivery In Karachi, Pakistan
-            </h4>
-            <p>
-                Ever wondered of entering a grocery store and getting an overview
-                of products sections and get to grab the required product from there?
-                The alternate is our search bar of HumMart where you can search from a
-                wide range of categories including grocery and staples, home furnishing,
-                breakfast and dairy, instant foods, biscuits and snacks, beverages,
-                household needs, personal care, home and kitchen, baby products, fruits
-                and vegetables, ice creams and a lot more. Now with online phones and
-                accessories purchase and with easy and timely home delivery all over
-                Pakistan. The online shopping of grocery is a blessing to get the
-                required products over a few clicks. We at HumMart provides our
-                customers with the best deals to get value addition on the purchase of products available online as a
-                bundle offer. If you are in a mood to
-                mingle with friends but you got a grocery list in your pocket, just
-                visit HumMart and order the grocery to get it delivered right at your
-                home while you get yourself entertained with friends. Want to cook
-                your favorite dish, no need to worry for the items to prepare a
-                mouthwatering dish. HumMart offers you ample products to get the
-                ingredients for the dish. We will provide you the products through
-                express delivery within 2 hours. You have the independence to opt
-                out from numerous products as HumMart focuses to bring utmost
-                facilities through its online grocery store and adding value in
-                life of our valued customers. You need to stay at your home, visit
-                hummart.com through your laptop, smartphone or even from phone
-                application.
-            </p>
+        <div class="container bg-color">
+            <div class="para-info"> 
+            <div class="para-heading">
+                <h4>
+                    Online Supermarket, Delivery In Karachi, Pakistan
+                </h4>
+            </div>
+            <div class="para-content">
+                <p>
+                    Ever wondered of entering a grocery store and getting an overview
+                    of products sections and get to grab the required product from there?
+                    The alternate is our search bar of HumMart where you can search from a
+                    wide range of categories including grocery and staples, home furnishing,
+                    breakfast and dairy, instant foods, biscuits and snacks, beverages,
+                    household needs, personal care, home and kitchen, baby products, fruits
+                    and vegetables, ice creams and a lot more. Now with online phones and
+                    accessories purchase and with easy and timely home delivery all over
+                    Pakistan. The online shopping of grocery is a blessing to get the
+                    required products over a few clicks. We at HumMart provides our
+                    customers with the best deals to get value addition on the purchase 
+                    of products available online as a
+                    bundle offer. If you are in a mood to
+                    mingle with friends but you got a grocery list in your pocket, just
+                    visit HumMart and order the grocery to get it delivered right at your
+                    home while you get yourself entertained with friends. Want to cook
+                    your favorite dish, no need to worry for the items to prepare a
+                    mouthwatering dish. HumMart offers you ample products to get the
+                    ingredients for the dish. We will provide you the products through
+                    express delivery within 2 hours. You have the independence to opt
+                    out from numerous products as HumMart focuses to bring utmost
+                    facilities through its online grocery store and adding value in
+                    life of our valued customers. You need to stay at your home, visit
+                    hummart.com through your laptop, smartphone or even from phone
+                    application.
+                </p>
+            </div>
+            </div>
         </div>
         <!--end class container-->
     </div><br><br>
+    
     <div class="second-footer"></div>
 
     <footer class="footer">
@@ -412,6 +407,7 @@
 
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
