@@ -202,6 +202,7 @@
 }
 .third-last-footer{
   background-color:#ececec;
+  margin-bottom: 50px;
 }
 .para-heading{
   color:#333;
@@ -248,7 +249,6 @@
 .tick{
   font-size:12px;
   color:white;
-
 }
 .link{
   padding:2px;
@@ -265,17 +265,9 @@
   color:white;
   background-color: #31373a;
 }
-.categories-menu{
-
-}
-
 .previous {
   font-size: 48px;
   color:#7B858A;
-  
-}
-.all-category-item{
-  background-color: white;
 }
 
 .a-link{
@@ -296,13 +288,40 @@
 }
 .all{
   display: flex;
+  margin-bottom: 50px;
 }
 .category-item{  
+  background-color: white;
   margin:20px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+.last-row{
+  display:flex; 
+  justify-content: space-between;
+}
+.offer-link{
+ color: #626566;
+ text-decoration: none;
+}
+.offer-link:hover{
+  color: #7B858A;
+  text-decoration: underline;
+ }
+.button4{
+  border-radius:50px;
+  background-color: #f4511e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border:none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
 }
 /* For mobile phones: */
 
