@@ -4,6 +4,11 @@
     margin-left: 150px;
     margin-right: 150px;
     max-width:100%;
+    margin-bottom: 20px;
+}
+.phone-icon{
+    font-size:18px;
+    color:white;
 }
 #upperbar{
     background-color: black;
@@ -329,7 +334,7 @@
   justify-content: space-between;
 
 }
-.divProduct1 >img{
+.divProduct1>img{
  width:30%;
 }
 .last-row{

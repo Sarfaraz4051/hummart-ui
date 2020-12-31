@@ -59,6 +59,7 @@ let offers = [
         "new_price": "Rs 315",
         "title": "BUY Nescafe Classic Coffee 50 Gm GET 2 Nestle Everyday Sachet 15 Gm FREE"
     }
+];
         // },
     // {
     //     "img_src": "images/offers/6.jpg",
@@ -78,38 +79,38 @@ let offers = [
     //     "new_price": "Rs 256",
     //     "title": "BUY Fair & Lovely Moisturising Fairness Lotion 200 Ml GET Lifebuoy Hand Sanitizer 60 Ml FREE"
     // }
-  ];
+  
 
 
-function product(){
-    var main = document.getElementById("main");
-    var div = document.createElement("div");
+const product=()=>{
+    let main = document.getElementById("main");
+    let div = document.createElement("div");
     div.setAttribute("class","myProductSt");
 
     for( i in offers){
     // create
 
-    var divProduct = document.createElement("div");
+    let divProduct = document.createElement("div");
 
-    var divProduct1 = document.createElement("div");
-    var divProduct2 = document.createElement("div");
-    var divProduct3 = document.createElement("div");
+    let divProduct1 = document.createElement("div");
+    let divProduct2 = document.createElement("div");
+    let divProduct3 = document.createElement("div");
 
-    var img = document.createElement("img");
-    var a = document.createElement("a");
-    var del = document.createElement("del");
-    var p = document.createElement("p");
-    var button = document.createElement("button");
+    let img = document.createElement("img");
+    let a = document.createElement("a");
+    let del = document.createElement("del");
+    let p = document.createElement("p");
+    let button = document.createElement("button");
     
     button.setAttribute("class","button4");
    
 
 
     img.setAttribute("src",offers[i].img_src)
-    var aText = document.createTextNode(offers[i].title);
-    var delText = document.createTextNode(offers[i].old_price);
-    var pText = document.createTextNode(offers[i].new_price);
-    var btnText = document.createTextNode("ADD TO CART");
+    let aText = document.createTextNode(offers[i].title);
+    let delText = document.createTextNode(offers[i].old_price);
+    let pText = document.createTextNode(offers[i].new_price);
+    let btnText = document.createTextNode("ADD TO CART");
 
     a.appendChild(aText);
     del.appendChild(delText);
